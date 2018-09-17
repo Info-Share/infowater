@@ -1,16 +1,4 @@
 <?php
-/**********************************************************
- 프로그램명 : class.esapi.php
- 설명 : OWASP esapi 유틸
- 작성자 : 양찬우
- 소속 : (주)비전아이티
- 일자 : 18.06.12
- 프로그램설명
- OWASP esapi 유틸
- **프로그램이력**
- 수정일          작업근거             유지보수담당
- '18.06.12       최초생성             양찬우
- **********************************************************/
 
 require_once ($_SERVER ['DOCUMENT_ROOT'] . '/owasp/src/ESAPI.php');
 require_once ($_SERVER ['DOCUMENT_ROOT'] . '/owasp/src/reference/DefaultValidator.php');
