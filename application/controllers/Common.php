@@ -12,7 +12,7 @@ class Common extends CI_Controller {
         $this->load->model(array('common_model'));
         
         
-        if(!$this->session->userdata('ssabun')){
+        if(!$this->session->userdata('ssabun')){ 
             Util::alert_redirect("로그인 정보가 없습니다.", '/index.php/');
             
         }

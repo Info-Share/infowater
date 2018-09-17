@@ -12,7 +12,7 @@ class Welcome extends CI_Controller {
         $this->load->helper('url');
         $this->load->helper('form');
         //$this->load->library('excelxml');
-        // PHPExcel 라이브러리 로드
+        // PHPExcel 라이브러리 로드 
         $this->load->library('excel');
         
         $this->load->helper('url');
