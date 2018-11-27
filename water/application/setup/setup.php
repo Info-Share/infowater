@@ -7,29 +7,6 @@ while($row = mysqli_fetch_array($result)){
 	//echo $row['extra_data']."<br>";
 }
 
-/*
-
-	if($row_reg['sabun'] == '') {
-        $query = "insert into tb_sys_passwordpolicy (sabun,last_change,err_count, pass_status ) values(?,now(),0,'d') ";
-    }
-    else {
-        $query = "update tb_sys_passwordpolicy set last_change = now(), pass_status='d' where sabun = ?";
-    }
-    $exec = $wass_db->update($query, array($change_sabun));
-    if(! $exec) {
-        Util::error_back("수정에 실패했습니다.");
-    }
-    
-    $query = "update wass_mast set passwd = sha2(?, 256) where sabun = ?";
-    $exec = $wass_db->update($query, array($new_pass, $change_sabun));
-    
-    if(! $exec) {
-        Util::error_back("수정에 실패했습니다.");
-    }
-
-
-*/
-//WorkLogger::work("메인","메인페이지 호출", "test");
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -45,6 +22,40 @@ while($row = mysqli_fetch_array($result)){
 	width:76px;
 	text-align:center
 }
+.setup_div{
+	width:400px;
+	height:500px;
+	background-color:blue;
+	position:absolute;
+	left:600px;
+	top:100px;
+}
+
+div.groupbox { 
+	width: 350px;			/* 박스 너비, 지정하지 않으면 최대치 사용 */
+	height: auto;				
+	margin: 25px 10px 10px 10px;		/* 박스 주위 여백 */
+	border: 1px solid #999;		/* 박스 테두리 색 */
+	padding: 0 8px;			/* 박스 여백(padding) */
+}
+div.groupbox h4 { 
+	line-height: 100%; 		/* 위쪽 테두리 선과 내용물 사이의 간격 */
+	padding-left: 8px; 		/* 왼쪽 테두리 선과 라벨 사이의 간격 */
+	font-size: 1em;			/* h4 태그의 텍스트 크기 지정 */
+	font-weight: normal;		/* h4 태그의 텍스트 두께 지정 */ 
+}
+div.groupbox h4 span { 
+	background-color: #fff;		/* 배경색과 동일해야 함 */
+	color: #333;			/* 라벨 텍스트 색 */
+	padding: 0 4px;			/* 라벨과 좌우 선 사이의 간격 */
+	position: relative; 
+	top: -1.1em;			/* 라벨의 상하 위치 조절 */
+}
+div.groupbox p {
+	margin-bottom: 1em;
+	line-height: 170%;
+}
+
 </style>
 <script>
 function getdata(){
@@ -64,11 +75,27 @@ function getdata(){
 	
 	
 }
+function open_setup(){
+	
+}
 </script>
 </head>
 <body>
 <?php include "../common/top_menu.php" ?>
-
+<div class="setup_div">
+	<div class="groupbox">
+		<table style="width:350px">
+			<tr style="height:50px">
+				<td>LOLO</td><td>LO</td><td><input type="text" size="8"></td><td><input type="text" size="8"></td>
+			</tr>
+			<tr style="height:50px">
+				<td>HIGH</td><td>HIHI</td><td><input type="text" size="8"></td><td><input type="text" size="8"></td>
+			</tr>
+			<tr>
+				
+		</table>
+	</div>
+</div>
 <table style="width:1900px; margin-top:50px" border="1">
 <tr>
 	<td class="table_head">종류</td>
@@ -100,7 +127,7 @@ function getdata(){
 </tr>
 <tr style="height:60px">
 	<td>센서1</td>
-	<td id="water_1_1">1</td>
+	<td id="water_1_1" onclick="open_setup('water_1_1')">1</td>
 	<td id="water_1_2">2</td>
 	<td id="water_1_3">3</td>
 	<td id="water_1_4">4</td>

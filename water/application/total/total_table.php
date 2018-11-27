@@ -7,29 +7,6 @@ while($row = mysqli_fetch_array($result)){
 	//echo $row['extra_data']."<br>";
 }
 
-/*
-
-	if($row_reg['sabun'] == '') {
-        $query = "insert into tb_sys_passwordpolicy (sabun,last_change,err_count, pass_status ) values(?,now(),0,'d') ";
-    }
-    else {
-        $query = "update tb_sys_passwordpolicy set last_change = now(), pass_status='d' where sabun = ?";
-    }
-    $exec = $wass_db->update($query, array($change_sabun));
-    if(! $exec) {
-        Util::error_back("수정에 실패했습니다.");
-    }
-    
-    $query = "update wass_mast set passwd = sha2(?, 256) where sabun = ?";
-    $exec = $wass_db->update($query, array($new_pass, $change_sabun));
-    
-    if(! $exec) {
-        Util::error_back("수정에 실패했습니다.");
-    }
-
-
-*/
-//WorkLogger::work("메인","메인페이지 호출", "test");
 ?>
 <!DOCTYPE html>
 <html lang="ko">

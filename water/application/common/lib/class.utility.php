@@ -413,5 +413,71 @@ END;
         }
         return false;
     }
+
+
+
+	// ------------------- 리트스 시작페이지 인덱스값 --------------------------------
+	function listIndex(&$page, &$line) {
+		if(! $page) {
+			$page = 1;
+		}
+		if(! $line) {
+			$line = 10;
+		}
+		
+		return ($page - 1) * $line;
+	}
+
+	// ------------------- 리트스 페이지 이동부분 처리 --------------------------------
+	function listPage($move_file) {
+		global $total, $line, $page, $img_top, $img_end, $img_prev, $img_next, $link;
+		
+		$total_page = ceil($total / $line);
+		if(! $total_page)
+			$total_page = 1;
+		$start_page = intval(($page - 1) / 10) * 10 + 1;
+		$end_page = ($total_page < $start_page + 9) ? $total_page : $start_page + 9;
+		$next_page = $page + 10;
+		$prev_page = $page - 10;
+		if($next_page > $total_page)
+			$next_page = $total_page;
+		if($prev_page < 1)
+			$prev_page = 1;
+			
+			// ---------- 페이지 넘김 버튼 ---------------
+		$top_bt = "<a href='$move_file?page=1&amp;$link'>$img_top</a>";
+		$end_bt = "<a href='$move_file?page=$total_page&amp;$link'>$img_end</a>";
+		if($page > 10) {
+			$prev_bt = "<a href='$move_file?page=$prev_page&amp;$link'>$img_prev</a>";
+		}
+		else {
+			$prev_bt = $img_prev;
+		}
+		if($next_page > $end_page) {
+			$next_bt = "<a href='$move_file?page=$next_page&amp;$link'>$img_next</a>";
+		}
+		else {
+			$next_bt = $img_next;
+		}
+		
+		// ---------- 페이지 표시 부분 -----------
+		echo "$top_bt&nbsp; $prev_bt &nbsp;";
+		$ct = 0;
+		for($i = $start_page; $i <= $end_page; $i ++) {
+			if($ct > 0)
+				echo " &nbsp;";
+			$ct ++;
+			if($page == $i) {
+				echo "<b><font color=red>$i</font></b>";
+			}
+			else {
+				echo "<a href='$move_file?page=$i&amp;$link' style='text-decoration:none;'><font color=blue>$i</font></a>";
+			}
+		}
+		if($total_page > $end_page) {
+			echo "..... <a href='$move_file?page=$total_page&amp;$link'><font color=blue>$total_page</font></a>";
+		}
+		echo "&nbsp; $next_bt &nbsp;$end_bt";
+	}
 }
 ?>
