@@ -1,0 +1,158 @@
+body {
+	MARGIN: 0px; 
+	BACKGROUND-COLOR: #ffffff;
+	LINE-HEIGHT: 120%; 	
+	SCROLLBAR-FACE-COLOR: #E5E5E5; 
+	SCROLLBAR-solid-COLOR: #595959; 
+	SCROLLBAR-border: 1px; 
+}
+
+a.pro:link, a.pro:visited {
+	color: #666666;
+	text-decoration:none;
+}
+a.pro:hover{
+	color:#707DB2;
+	text-decoration:none;
+}
+
+a { selector-dummy : expression(this.hideFocus=true);}
+
+img {
+		border:0;
+}
+
+.png24 { 
+    tmp:expression(setPng24(this)); 
+} 
+
+#work{font-size:8pt; font-family:굴림; color:#666666;line-height:100%;text-decoration: none;}
+
+
+.board_name{font-family:굴림; font-size:9pt; line-height:130%; color:#666666;font-weight:bold;}
+
+<!--기본문서폰트-->
+.a{ font-family:굴림; color:#666666;line-height:120%;text-decoration: none}
+A:link {color:#666666;text-decoration : none}
+A:visited {color:#666666; text-decoration : none}
+A:active {COLOR:#666666;text-decoration : none}
+A:hover {color:#0084C6;}
+
+
+ td, body{font-size:9pt; font-family:굴림; color:#666666 ;line-height:150%;}
+ .input{ background-color:#ffffff; font-size:9pt; color:#333333; border:1x solid #e4e4e4;padding:4;}
+ .input1{ background-color:#F4F4F4; font-size:9pt; color:#555555; border:1x solid #E6E6E6;}
+ .input2{ background-color:#ffffff; font-size:10pt; color:#555555; border:1x solid #E6E6E6;}
+ .input_contactus{ background-color:#f7f7f7; font-size:9pt; color:#555555; border:1x solid dddddd; height:20;}
+ .input_contactus2{ background-color:#d4d4d4; font-size:9pt; color:#555555; border:1x solid dddddd; height:20;}
+
+ .input_contactus_red{ background-color:#ed1b24; font-size:9pt; color:white; border:1x solid dddddd; height:20;}
+ .input_contactus_yellow{ background-color:#fef200; font-size:9pt; color:#555555; border:1x solid dddddd; height:20;}
+ .input_contactus_green{ background-color:#00b050; font-size:9pt; color:black; border:1x solid dddddd; height:20;}
+ 
+ .input_board{ background-color:FCF6F7; font-size:9pt; color:#555555; border:1x solid ffffff;}
+ .input3{ background-color:#ffffff; font-size:9pt; color:333333; border:1x solid #00407E;}
+
+.line1 {line-height:150%; color:#666666; border-collapse: collapse; text-align: justify;}
+.line2 {line-height:150%; color:#666666; margin-left:20px; text-align: justify;}
+
+.dot {line-height:150%; color:#f27f2c; font-weight:bold;}
+.gray {font-size:9pt; font-family:굴림; line-height:150%; color:#afafaf;}
+.location {font-size:8pt; font-family:굴림; line-height:150%; color:#707070;}
+.location2 {font-size:8pt; font-family:굴림; line-height:150%; color:#0074cd;}
+.record {font-size:9pt; font-family:굴림; color:#333333 ;line-height:120%;}
+.orange {font-size:9pt; font-family:굴림; line-height:150%; color:#ff4200; font-weight:bold;}
+
+
+
+.td_center{text-align:center;}
+.td_left{text-align:left;}
+.td_right{text-align:right;}
+.num {font-size:8pt; font-family:돋움; color:#999999;}
+
+/* 게시판 설정*/
+#list th {border-top:2px solid #0077d0; border-bottom:1px solid #dddddd; height:30px ;font-size:8pt; font-family:돋움; color:#666666 ; background-color:#eff8ff;}
+#list td {border-bottom:1px solid #dddddd; height:30px ;font-size:9pt; font-family:돋움; color:#666666 ;}
+#list td num {border-bottom:1px solid #dddddd; height:30px ;font-size:8pt; font-family:돋움; color:#666666 ;}
+.title_l {border-left:1px solid #dddddd; border-top:2px solid #0077d0; border-bottom:1px solid #dddddd; height:30px ;font-size:8pt; font-family:돋움; color:#666666 ; background-color:#e8f0f6;}
+.title_r {border-right:1px solid #dddddd; border-top:2px solid #0077d0; border-bottom:1px solid #dddddd; height:30px ;font-size:8pt; font-family:돋움; color:#666666 ; background-color:#e8f0f6;}
+.title_bg{border-top:2px solid #0077d0; border-bottom:1px solid #dddddd; height:30px ;font-size:8pt; font-family:돋움; color:#666666 ; background-color:#e8f0f6;}
+.write_title {border-top:2px solid #0077d0; border-bottom:1px solid #cccccc; height:30px ;font-size:8pt; font-family:돋움; color:#666666 ; background-color:#e8f0f6; font-weight:bold; padding:3px 0 3px 10px;}
+.write_con {border-top:2px solid #0077d0; border-bottom:1px solid #dddddd; height:30px ;font-size:8pt; font-family:돋움; color:#666666 ; background-color:#ffffff; padding:5px 0 3px 10px;}
+.write_title2 {border-bottom:1px solid #333333; height:30px ;font-size:9pt; font-family:돋움; color:#666666 ; background-color:#e8f0f6; font-weight:bold; padding:3px 0 3px 10px;}
+.write_con2 {border-bottom:1px solid #333333; height:30px ;font-size:8pt; font-family:돋움; color:#33333 ; background-color:#ffffff; padding:3px 0 3px 10px;}
+.write_title3 {border-bottom:1px solid #0077d0; height:30px ;font-size:8pt; font-family:돋움; color:#666666 ; background-color:#e8f0f6; font-weight:bold; padding:3px 0 3px 10px;}
+.write_con3 {border-bottom:1px solid #0077d0; height:30px ;font-size:8pt; font-family:돋움; color:#666666 ; background-color:#ffffff; padding:3px 0 3px 10px;}
+
+
+
+.button {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	vertical-align: baseline;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+.small {
+	font-size: 12px;
+	padding: 5 5 3 5;
+}
+
+
+.big {
+	font-size: 16px;
+	padding: 5 5 3 5;
+}
+
+.blue {
+	color: #d9eef7;
+	border: solid 1px #0076a3;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+}
+
+.black {
+	color: #d9eef7;
+	border: solid 1px #f8f9fd;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7e7e7e', endColorstr='#595959');
+}
+
+.red {
+	color: #d9eef7;
+	border: solid 1px #f8f9fd;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F15F5F', endColorstr='#980000');
+}
+.green {
+	color: #d9eef7;
+	border: solid 1px #22741C;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1DDB16', endColorstr='#2F9D27');
+}
+
+
+.single_line_button1 {
+	color: #d9eef7;
+	border: solid 1px #0076a3;
+	width:150px;
+	text-align:left;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#518cd0', endColorstr='#1C517B');
+}
+
+.single_line_button2 {
+	color: #d9eef7;
+	border: solid 1px #0076a3;
+	width:150px;
+	text-align:left;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48ccd8', endColorstr='#0078a5');
+}
